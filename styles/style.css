@@ -69,6 +69,7 @@ a {
   --header_background_color: #2d25a0;
   --button_color: #e02c6d;
   --normal_text_color: #6c6c6c;
+  --match_sign: #808080;
   --social_media_icon: #969bab;
   --social_media_icon_bg: #e7e7e8;
 }
@@ -141,16 +142,63 @@ header {
   margin: 0 0 0 8px;
 }
 
-#heading_img img {
+.heading_img {
   width: 556px;
   height: 438px;
+  position: relative;
 }
+
+header:hover .header_image_bg {
+  transform: rotateX(30deg);
+  -webkit-transform: rotateX(30deg);
+  -moz-transform: rotateX(30deg);
+  -ms-transform: rotateX(30deg);
+  -o-transform: rotateX(30deg);
+}
+
+header:hover .header_image_ball {
+  animation: header_animation_ball 5s ease-in-out ;
+  -webkit-animation: header_animation_ball 5s ease-in-out ;
+}
+
+.heading_img img {
+  display: inline-block;
+}
+
+.header_image_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 556px;
+  transition: .5s ease;
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -ms-transition: .5s ease;
+  -o-transition: .5s ease;
+}
+
+.header_image_man {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+} 
+
+.header_image_ball {
+  position: absolute;
+  top: 89px;
+  left: 15px;
+  width: 70px;
+  animation: ball_rotate 5s infinite linear;
+  -webkit-animation: ball_rotate 5s infinite linear;
+}
+
 /* ==================================================
 ===========// Header Section CSS : End //============
 ===================================================== */
 
 /* ==================================================
-===========// Nav Section CSS : Start //==========
+===========// Nav Section CSS : Start //============
 ===================================================== */
 nav {
   display: flex;
@@ -232,6 +280,7 @@ main {
 
 .player_infos a {
   display: inline-block;
+  font-weight: 500;
   color: #000;
   margin: 6px 0 0 0;
 }
@@ -313,11 +362,18 @@ main {
   text-align: center;
   text-transform: uppercase;
   font-size: 18px;
+  margin: 20px 0 20px 0;
 }
 
 #upcoming_matches .time span {
   color: white;
-  padding: 3px;
+  padding: 3px 10px;
+  background-color: var(--match_sign);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 #upcoming_matches img {
