@@ -73,11 +73,7 @@
     -moz-transform: rotate(0);
     -ms-transform: rotate(0);
     -o-transform: rotate(0);
-    opacity: 0;
 }
-  5% {
-    opacity: 1;
-  }
 
   100% {
     transform: rotate(360deg);
