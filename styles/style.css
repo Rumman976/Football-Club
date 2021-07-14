@@ -1,0 +1,246 @@
+/* ==================================================
+==============// Basic structure setup //============ 
+===================================================== */
+
+/* Imported fonts here: >>> */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* ==================================================
+==============// Google fonts Infos //===============
+*
+*   font-family: 'Poppins', sans-serif;
+*   font-weight: 100,200,300,400,500,600,700,800,900;
+*
+===================================================== */
+
+
+/* ==================================================
+==============// CSS TABLE OF CONTENT //=============
+*   
+*   ----- COMMON CSS SECTION -----
+*   1.  Fixing CSS
+*   2.  Root CSS
+*   2.  Global CSS 
+*  
+*   ----- HEADER SECTION -----
+*   2. Header Section
+*   3. 
+*   
+*   ----- NAV SECTION -----
+*   8. Nav Link
+*   
+*   ----- MAIN SECTION -----
+*   8. Top Banner
+*   9. Top People
+*   
+*   ----- ASIDE SECTION -----
+*   10. About Names
+*   
+*   ----- FOOTER SECTION -----
+*   13. Contact Us Section
+*   14. Our Location Section
+*   
+===================================================== */
+
+
+/* ==================================================
+>>>>>>>>>>>>>>>>// Fixing CSS : Start //<<<<<<<<<<<<<
+===================================================== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+/* ==================================================
+>>>>>>>>>>>>>>>>// Fixing CSS : End //<<<<<<<<<<<<<<<
+===================================================== */
+
+
+/* ==================================================
+>>>>>>>>>>// Custom CSS Properties : Start //<<<<<<<<
+===================================================== */
+:root {
+  --header_background_color: #2D25A0;
+  --button_color: #E02C6D;
+}
+/* ==================================================
+>>>>>>>>>>// Custom CSS Properties : End //<<<<<<<<<<
+===================================================== */
+
+
+/* ==================================================
+>>>>>>>>>>>>>>// Global CSS : Start //<<<<<<<<<<<<<<<
+===================================================== */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.button {
+  height: 44px;
+  background-color: var(--button_color);
+  text-align: center;
+  line-height: 44px;
+}
+
+/* ==================================================
+>>>>>>>>>>>>>>// Global CSS : End //<<<<<<<<<<<<<<<<<
+===================================================== */
+
+
+/* ==================================================
+===========// Header Section CSS : Start //==========
+===================================================== */
+header {
+  background-color: var(--header_background_color);
+  padding: 42px 0 0 0;
+  height: 650px;
+}
+
+#heading_items {
+  display: flex;
+  padding: 67px 0 0 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#heading_text h1, #heading_text p {
+  color: #fff;
+}
+
+#heading_text h1 {
+  font-size: 64px;
+  font-weight: bold;
+  width: 485px;
+  padding: 0 0 27px 0;
+  line-height: 80px;
+}
+
+#heading_text .button {
+  width: 168px;
+  display: inline-block;
+}
+
+#heading_text a i {
+  margin: 0 0 0 8px;
+}
+
+#heading_img img {
+  width: 556px;
+  height: 438px;
+}
+/* ==================================================
+===========// Header Section CSS : End //============
+===================================================== */
+
+
+/* ==================================================
+===========// Nav Section CSS : Start //==========
+===================================================== */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  width: 587px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+nav .button {
+  width: 123px;
+}
+
+nav a i {
+  font-size: 17px;
+  margin: 0 8px 0 0;
+}
+
+/* ==================================================
+===========// Nav Section CSS : End //===============
+===================================================== */
+
+
+/* ==================================================
+===========// Main Section CSS : Start //===========
+===================================================== */
+
+
+/* ==================================================
+---------// Player Card Section CSS : Start //-------
+===================================================== */
+.player_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 27px;
+  justify-content: space-between;
+  margin: 70px 0 165px 0;
+}
+
+.player_card {
+  width: 330px;
+  height: 474px;
+  padding: 15px 15px 33px 15px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 50px -25px #000;
+}
+
+.player_card img {
+  width: 100%;
+}
+
+.player_card h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #18191F;
+  margin: 16px 0 10px 0;
+}
+
+.player_card p {
+  width: 300px;
+  height: 104px;
+  color: #6C6C6C;
+  line-height: 26px;
+  overflow: hidden;
+}
+
+.player_card a {
+  display: inline-block;
+  color: #000;
+  margin: 6px 0 0 0;
+}
+/* ==================================================
+---------// Player Card Section CSS : End //---------
+===================================================== */
+
+
+/* ==================================================
+===========// Main Section CSS : End //==============
+===================================================== */
