@@ -18,24 +18,20 @@
 /* ==================================================
 ==============// CSS TABLE OF CONTENT //=============
 *   
-*   ----- COMMON CSS SECTION -----
+*   ----- Fixing CSS SECTION -----
 *   1.  Fixing CSS
-*   2.  Root CSS
-*   2.  Global CSS 
+*
+*   ----- COMMON CSS SECTION -----
+*   2.  Custom CSS
+*   3.  Common CSS 
 *  
 *   ----- HEADER SECTION -----
-*   2. Header Section
-*   3. 
-*   
-*   ----- NAV SECTION -----
-*   8. Nav Link
+*   4. Header Section
+*   5. Nav Section
 *   
 *   ----- MAIN SECTION -----
-*   8. Top Banner
-*   9. Top People
-*   
-*   ----- ASIDE SECTION -----
-*   10. About Names
+*   8. Player Card Section
+*   9. Highlight Section
 *   
 *   ----- FOOTER SECTION -----
 *   13. Contact Us Section
@@ -74,6 +70,7 @@ a {
 :root {
   --header_background_color: #2D25A0;
   --button_color: #E02C6D;
+  --normal_text_color: #6C6C6C;
 }
 /* ==================================================
 >>>>>>>>>>// Custom CSS Properties : End //<<<<<<<<<<
@@ -81,7 +78,7 @@ a {
 
 
 /* ==================================================
->>>>>>>>>>>>>>// Global CSS : Start //<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>// Common CSS : Start //<<<<<<<<<<<<<<<
 ===================================================== */
 body {
   font-family: 'Poppins', sans-serif;
@@ -99,8 +96,12 @@ body {
   line-height: 44px;
 }
 
+.normal-text {
+  font-size: 16px;
+  color: var(--normal_text_color);
+}
 /* ==================================================
->>>>>>>>>>>>>>// Global CSS : End //<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>// Common CSS : End //<<<<<<<<<<<<<<<<<
 ===================================================== */
 
 
@@ -190,7 +191,9 @@ nav a i {
 /* ==================================================
 ===========// Main Section CSS : Start //===========
 ===================================================== */
-
+main {
+  margin: 70px 0 158px 0;
+}
 
 /* ==================================================
 ---------// Player Card Section CSS : Start //-------
@@ -201,7 +204,7 @@ nav a i {
   column-gap: 30px;
   row-gap: 27px;
   justify-content: space-between;
-  margin: 70px 0 165px 0;
+  margin: 0px 0 165px 0;
 }
 
 .player_card {
@@ -226,7 +229,6 @@ nav a i {
 .player_card p {
   width: 300px;
   height: 104px;
-  color: #6C6C6C;
   line-height: 26px;
   overflow: hidden;
 }
@@ -242,5 +244,101 @@ nav a i {
 
 
 /* ==================================================
+---------// Highlights Section CSS : Start //--------
+===================================================== */
+#highlight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#highlights_text {
+
+}
+
+#highlights_text h1 {
+  width: 470px;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+#highlights_text p {
+  width: 404px;
+  line-height: 28px;
+  margin: 8px 0 24px 0;
+}
+
+#highlight .button {
+  display: inline-block;
+  width: 173px;
+}
+
+#highlight .button i {
+  margin: 0 0 0 8px;
+} 
+
+#highlights_img {
+  width: 567px;
+}
+
+#highlights_img img {
+  width: 100%;
+}
+/* ==================================================
+---------// Highlights Section CSS : End //----------
+===================================================== */
+
+
+/* ==================================================
 ===========// Main Section CSS : End //==============
+===================================================== */
+
+
+/* ==================================================
+===========// Footer Section CSS : End //==============
+===================================================== */
+footer {
+  padding: 0 0 63px 0;
+}
+
+.footer_infos{
+  margin: 0 auto;
+  width: 483px;
+}
+
+.footer_infos img {
+  width: 100%;
+}
+
+#social_media_links {
+  text-align: center;
+  font-size: 17px;
+  margin: 20px 0;
+}
+
+#social_media_links a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: #E7E7E8;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-size: 17px;
+  text-align: center;
+  line-height: 32px;
+}
+
+#social_media_links i {
+  color: #969BAB;
+}
+
+.footer_infos p {
+  text-align: center;
+}
+/* ==================================================
+===========// Footer Section CSS : End //==============
 ===================================================== */
