@@ -3,8 +3,7 @@
 ===================================================== */
 
 /* Imported fonts here: >>> */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* ==================================================
 ==============// Google fonts Infos //===============
@@ -13,7 +12,6 @@
 *   font-weight: 100,200,300,400,500,600,700,800,900;
 *
 ===================================================== */
-
 
 /* ==================================================
 ==============// CSS TABLE OF CONTENT //=============
@@ -39,11 +37,12 @@
 *   
 ===================================================== */
 
-
 /* ==================================================
 >>>>>>>>>>>>>>>>// Fixing CSS : Start //<<<<<<<<<<<<<
 ===================================================== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -63,25 +62,25 @@ a {
 >>>>>>>>>>>>>>>>// Fixing CSS : End //<<<<<<<<<<<<<<<
 ===================================================== */
 
-
 /* ==================================================
 >>>>>>>>>>// Custom CSS Properties : Start //<<<<<<<<
 ===================================================== */
 :root {
-  --header_background_color: #2D25A0;
-  --button_color: #E02C6D;
-  --normal_text_color: #6C6C6C;
+  --header_background_color: #2d25a0;
+  --button_color: #e02c6d;
+  --normal_text_color: #6c6c6c;
+  --social_media_icon: #969bab;
+  --social_media_icon_bg: #e7e7e8;
 }
 /* ==================================================
 >>>>>>>>>>// Custom CSS Properties : End //<<<<<<<<<<
 ===================================================== */
 
-
 /* ==================================================
 >>>>>>>>>>>>>>// Common CSS : Start //<<<<<<<<<<<<<<<
 ===================================================== */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -104,7 +103,6 @@ body {
 >>>>>>>>>>>>>>// Common CSS : End //<<<<<<<<<<<<<<<<<
 ===================================================== */
 
-
 /* ==================================================
 ===========// Header Section CSS : Start //==========
 ===================================================== */
@@ -121,7 +119,8 @@ header {
   align-items: center;
 }
 
-#heading_text h1, #heading_text p {
+#heading_text h1,
+#heading_text p {
   color: #fff;
 }
 
@@ -149,7 +148,6 @@ header {
 /* ==================================================
 ===========// Header Section CSS : End //============
 ===================================================== */
-
 
 /* ==================================================
 ===========// Nav Section CSS : Start //==========
@@ -187,7 +185,6 @@ nav a i {
 ===========// Nav Section CSS : End //===============
 ===================================================== */
 
-
 /* ==================================================
 ===========// Main Section CSS : Start //===========
 ===================================================== */
@@ -198,7 +195,7 @@ main {
 /* ==================================================
 ---------// Player Card Section CSS : Start //-------
 ===================================================== */
-.player_cards {
+#player_infoss {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 30px;
@@ -207,7 +204,7 @@ main {
   margin: 0px 0 165px 0;
 }
 
-.player_card {
+.player_infos {
   width: 330px;
   height: 474px;
   padding: 15px 15px 33px 15px;
@@ -215,25 +212,25 @@ main {
   box-shadow: 0px 0px 50px -25px #000;
 }
 
-.player_card img {
+.player_infos img {
   width: 100%;
 }
 
-.player_card h1 {
+.player_infos h1 {
   font-size: 28px;
   font-weight: bold;
-  color: #18191F;
+  color: #18191f;
   margin: 16px 0 10px 0;
 }
 
-.player_card p {
+.player_infos p {
   width: 300px;
   height: 104px;
   line-height: 26px;
   overflow: hidden;
 }
 
-.player_card a {
+.player_infos a {
   display: inline-block;
   color: #000;
   margin: 6px 0 0 0;
@@ -242,7 +239,6 @@ main {
 ---------// Player Card Section CSS : End //---------
 ===================================================== */
 
-
 /* ==================================================
 ---------// Highlights Section CSS : Start //--------
 ===================================================== */
@@ -250,10 +246,10 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0px 0 165px 0;
 }
 
 #highlights_text {
-
 }
 
 #highlights_text h1 {
@@ -276,7 +272,7 @@ main {
 
 #highlight .button i {
   margin: 0 0 0 8px;
-} 
+}
 
 #highlights_img {
   width: 567px;
@@ -289,39 +285,151 @@ main {
 ---------// Highlights Section CSS : End //----------
 ===================================================== */
 
+/* ==================================================
+------// Upcoming Matches Section CSS : Start //-----
+===================================================== */
+#upcoming_matches {
+  border: 10px solid var(--header_background_color);
+  width: 100%;
+  height: 411px;
+  position: relative;
+  padding: 20px;
+  margin: 0px 0 165px 0;
+}
+
+#upcoming_matches h2 {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: white;
+  position: absolute;
+  top: -25px;
+  left: 450px;
+}
+
+#upcoming_matches .time {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#upcoming_matches .time span {
+  color: white;
+  padding: 3px;
+}
+
+#upcoming_matches img {
+  width: 70px;
+}
+
+.next_teams,
+.previous_teams {
+  display: flex;
+  justify-content: space-evenly;
+  height: 120px;
+}
+
+.stadium {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0 0 0;
+}
+
+#score {
+  font-size: 30px;
+}
+/* ==================================================
+------// Upcoming Matches Section CSS : End //-------
+===================================================== */
+
+/* ==================================================
+----------// Sponsors Section CSS : End //-----------
+===================================================== */
+#sponsored_section {
+  margin: 0 0 165px 0;
+}
+
+#sponsored_section p {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+#sponsored_logos {
+  display: grid;
+  grid-template-areas:
+    " . nike hyundai ea ."
+    ". trivago . cocacola . ";
+  justify-content: space-between;
+  width: 100%;
+}
+
+#sponsored_logos img {
+  margin: 20px auto;
+}
+
+#sponsored_logos img:nth-child(1n) {
+  width: 100px;
+  grid-area: nike;
+}
+#sponsored_logos img:nth-child(2n) {
+  width: 150px;
+  grid-area: hyundai;
+}
+#sponsored_logos img:nth-child(3n) {
+  width: 100px;
+  grid-area: ea;
+}
+
+#sponsored_logos img:nth-child(4n) {
+  width: 150px;
+  grid-area: trivago;
+}
+#sponsored_logos img:nth-child(5n) {
+  width: 150px;
+  grid-area: cocacola;
+}
+
+/* ==================================================
+----------// Sponsors Section CSS : End //-----------
+===================================================== */
 
 /* ==================================================
 ===========// Main Section CSS : End //==============
 ===================================================== */
 
-
 /* ==================================================
-===========// Footer Section CSS : End //==============
+===========// Footer Section CSS : End //============
 ===================================================== */
 footer {
   padding: 0 0 63px 0;
 }
 
-.footer_infos{
+.footer_infos {
   margin: 0 auto;
   width: 483px;
 }
 
 .footer_infos img {
   width: 100%;
+  margin-right: 0px;
 }
 
 #social_media_links {
   text-align: center;
   font-size: 17px;
-  margin: 20px 0;
+  margin: 20px 0 20px 0;
 }
 
 #social_media_links a {
   display: inline-block;
   width: 32px;
   height: 32px;
-  background-color: #E7E7E8;
+  background-color: var(--social_media_icon_bg);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -333,7 +441,7 @@ footer {
 }
 
 #social_media_links i {
-  color: #969BAB;
+  color: var(--social_media_icon);
 }
 
 .footer_infos p {
