@@ -1,4 +1,4 @@
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1000px) {
   header {
     width: 100%;
     height: 600px;
@@ -39,6 +39,18 @@
 
   #player_infos {
     grid-template-columns: repeat(2, 1fr);
+    
+  }
+
+  .player_infos {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+
+  }
+
+  .player_infos p {
+    width: 100%;
   }
 
   #highlight {
