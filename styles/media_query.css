@@ -145,6 +145,7 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
+
   #highlight {
     flex-direction: column;
     align-items: center;
@@ -159,6 +160,10 @@
 
   #highlights_text h1 {
     font-size: 30px;
+    width: 100%;
+  }
+
+  #highlights_text p {
     width: 100%;
   }
 
@@ -204,6 +209,16 @@
 
   .footer_infos {
     width: 80%;
+  }
+}
+@media only screen and (max-width: 350px){
+  .player_infos {
+    width: 250px;
+    height: auto;
+  }
+
+  .player_infos p {
+    width: 100%;
   }
 }
 
