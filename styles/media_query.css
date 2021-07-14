@@ -1,24 +1,25 @@
-@media screen and (max-width: 1000px) {
+/* ==================================================
+=========// Device Screen : < 1190 Width //==========
+===================================================== */
+
+@media screen and (max-width: 1190px) {
+
+/* >>>>>>>> Common CSS Section <<<<<<<< */
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+
+/* >>>>>>>> Header Section <<<<<<<< */
   header {
     width: 100%;
     height: 600px;
     overflow: hidden;
   }
-  .container {
-    width: 100%;
-    padding: 0 10px;
-  }
   #heading_items {
     width: 100%;
     justify-content: center;
-  }
-
-  .heading_img {
-    /* width: 100px; */
-  }
-
-  nav {
-    display: none;
   }
 
   #heading_items {
@@ -37,22 +38,35 @@
     text-align: left;
   }
 
+
+/* >>>>>>>> Nav Section <<<<<<<< */
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    margin: 0 10px 0 0;
+  }
+
+
+/* >>>>>>>> Player Card Section <<<<<<<< */
   #player_infos {
     grid-template-columns: repeat(2, 1fr);
-    
+    justify-content: space-around;
   }
 
   .player_infos {
     width: 90%;
     max-width: 400px;
     height: auto;
-
   }
 
   .player_infos p {
     width: 100%;
   }
 
+
+/* >>>>>>>> Highlight Section <<<<<<<< */
   #highlight {
     flex-direction: column;
     align-items: center;
@@ -66,8 +80,12 @@
   }
 
   #highlights_text h1 {
-    font-size: 30px;
+    font-size: 40px;
     width: 100%;
+  }
+
+  #highlights_text p {
+    width: 80%;
   }
 
   #highlights_img {
@@ -79,6 +97,8 @@
     display: block;
   }
 
+
+/* >>>>>>>> Upcoming Match Section <<<<<<<< */
   #upcoming_matches {
     position: relative;
     height: 500px;
@@ -95,45 +115,55 @@
     line-height: 30px;
   }
 
+/* >>>>>>>> Sponsored Section <<<<<<<< */
   #sponsored_section {
     width: 100%;
   }
 
   #sponsored_logos {
     grid-template-areas:
-    " nike"
-    "hyundai" 
-    "ea"
-    "trivago"
-    "cocacola";
+      " nike"
+      "hyundai"
+      "ea"
+      "trivago"
+      "cocacola";
     justify-content: center;
     align-items: center;
   }
 
+
+/* >>>>>>>> Footer Section <<<<<<<< */
   .footer_infos {
     width: 50%;
   }
 }
 
+
+/* ==================================================
+=========// Device Screen : < 704 Width //===========
+===================================================== */
+
 @media screen and (max-width: 704px) {
-  header {
-    width: 100%;
-    height: 400px;
-  }
+  
+/* >>>>>>>> Common CSS Section <<<<<<<< */
   .container {
     width: 100%;
     padding: 0 10px;
   }
+
+
+/* >>>>>>>> Header Section <<<<<<<< */
+  header {
+    width: 100%;
+    height: 400px;
+  }
+
   #heading_items {
     width: 100%;
     justify-content: center;
   }
 
   .heading_img {
-    display: none;
-  }
-
-  nav {
     display: none;
   }
 
@@ -153,11 +183,21 @@
     text-align: left;
   }
 
+
+
+/* >>>>>>>> Nav Section <<<<<<<< */
+  nav {
+    display: none;
+  }
+
+
+/* >>>>>>>> Player Card Section <<<<<<<< */
   #player_infos {
     grid-template-columns: repeat(1, 1fr);
   }
 
 
+/* >>>>>>>> Highlight Section <<<<<<<< */
   #highlight {
     flex-direction: column;
     align-items: center;
@@ -188,6 +228,8 @@
     display: block;
   }
 
+
+/* >>>>>>>> Upcoming Match Section <<<<<<<< */
   #upcoming_matches {
     position: relative;
     height: 500px;
@@ -204,26 +246,37 @@
     line-height: 30px;
   }
 
+
+/* >>>>>>>> Sponsored Section <<<<<<<< */
   #sponsored_section {
     width: 100%;
   }
 
   #sponsored_logos {
     grid-template-areas:
-    " nike"
-    "hyundai" 
-    "ea"
-    "trivago"
-    "cocacola";
+      " nike"
+      "hyundai"
+      "ea"
+      "trivago"
+      "cocacola";
     justify-content: center;
     align-items: center;
   }
 
+
+/* >>>>>>>> Footer Section <<<<<<<< */
   .footer_infos {
     width: 80%;
   }
 }
-@media only screen and (max-width: 350px){
+
+
+/* ==================================================
+=========// Device Screen : < 350 Width //===========
+===================================================== */
+
+@media only screen and (max-width: 350px) {
+
   .player_infos {
     width: 250px;
     height: auto;
@@ -233,5 +286,3 @@
     width: 100%;
   }
 }
-
-

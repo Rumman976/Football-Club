@@ -2,8 +2,10 @@
 ==============// Basic structure setup //============ 
 ===================================================== */
 
-/* Imported fonts here: >>> */
+
+/* Imported fonts here: >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 
 /* ==================================================
 ==============// Google fonts Infos //===============
@@ -13,10 +15,11 @@
 *
 ===================================================== */
 
+
 /* ==================================================
 ==============// CSS TABLE OF CONTENT //=============
 *   
-*   ----- Fixing CSS SECTION -----
+*   ----- FIXING CSS SECTION -----
 *   1.  Fixing CSS
 *
 *   ----- COMMON CSS SECTION -----
@@ -25,17 +28,24 @@
 *  
 *   ----- HEADER SECTION -----
 *   4. Header Section
-*   5. Nav Section
-*   
+*   5. Header Text
+*   6. Heading Images
+*   7. Nav Section
+*
 *   ----- MAIN SECTION -----
 *   8. Player Card Section
-*   9. Highlight Section
+*   9. Player Info Box Design 
+*  10. Highlight Section
+*  11. Upcoming Matches Section
+*  12. Upcoming Match Box Design
+*  13. Sponsors Section
 *   
 *   ----- FOOTER SECTION -----
-*   13. Contact Us Section
-*   14. Our Location Section
+*   14. Social Link Design
+*   15. Copyright Infos Design
 *   
 ===================================================== */
+
 
 /* ==================================================
 >>>>>>>>>>>>>>>>// Fixing CSS : Start //<<<<<<<<<<<<<
@@ -62,6 +72,7 @@ a {
 >>>>>>>>>>>>>>>>// Fixing CSS : End //<<<<<<<<<<<<<<<
 ===================================================== */
 
+
 /* ==================================================
 >>>>>>>>>>// Custom CSS Properties : Start //<<<<<<<<
 ===================================================== */
@@ -76,6 +87,7 @@ a {
 /* ==================================================
 >>>>>>>>>>// Custom CSS Properties : End //<<<<<<<<<<
 ===================================================== */
+
 
 /* ==================================================
 >>>>>>>>>>>>>>// Common CSS : Start //<<<<<<<<<<<<<<<
@@ -104,6 +116,7 @@ body {
 >>>>>>>>>>>>>>// Common CSS : End //<<<<<<<<<<<<<<<<<
 ===================================================== */
 
+
 /* ==================================================
 ===========// Header Section CSS : Start //==========
 ===================================================== */
@@ -119,6 +132,8 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
+/* >>>>>>>> Heading Texts <<<<<<<< */
 
 #heading_text h1,
 #heading_text p {
@@ -157,9 +172,11 @@ header:hover .header_image_bg {
 }
 
 header:hover .header_image_ball {
-  animation: header_animation_ball 5s ease-in-out ;
-  -webkit-animation: header_animation_ball 5s ease-in-out ;
+  animation: header_animation_ball 5s ease-in-out;
+  -webkit-animation: header_animation_ball 5s ease-in-out;
 }
+
+/* >>>>>>>> Heading Images <<<<<<<< */
 
 .heading_img img {
   display: inline-block;
@@ -170,11 +187,11 @@ header:hover .header_image_ball {
   top: 0;
   left: 0;
   width: 556px;
-  transition: .5s ease;
-  -webkit-transition: .5s ease;
-  -moz-transition: .5s ease;
-  -ms-transition: .5s ease;
-  -o-transition: .5s ease;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
 }
 
 .header_image_man {
@@ -182,7 +199,7 @@ header:hover .header_image_ball {
   top: 0;
   left: 0;
   width: 500px;
-} 
+}
 
 .header_image_ball {
   position: absolute;
@@ -196,6 +213,7 @@ header:hover .header_image_ball {
 /* ==================================================
 ===========// Header Section CSS : End //============
 ===================================================== */
+
 
 /* ==================================================
 ===========// Nav Section CSS : Start //============
@@ -228,10 +246,10 @@ nav a i {
   font-size: 17px;
   margin: 0 8px 0 0;
 }
-
 /* ==================================================
 ===========// Nav Section CSS : End //===============
 ===================================================== */
+
 
 /* ==================================================
 ===========// Main Section CSS : Start //===========
@@ -239,7 +257,6 @@ nav a i {
 main {
   margin: 70px 0 158px 0;
 }
-
 /* ==================================================
 ---------// Player Card Section CSS : Start //-------
 ===================================================== */
@@ -251,6 +268,8 @@ main {
   justify-content: space-between;
   margin: 0px 0 165px 0;
 }
+
+/* >>>>>>>> Players Info Box Design <<<<<<<< */
 
 .player_infos {
   width: 330px;
@@ -288,6 +307,7 @@ main {
 ---------// Player Card Section CSS : End //---------
 ===================================================== */
 
+
 /* ==================================================
 ---------// Highlights Section CSS : Start //--------
 ===================================================== */
@@ -296,9 +316,6 @@ main {
   justify-content: space-between;
   align-items: center;
   margin: 0px 0 165px 0;
-}
-
-#highlights_text {
 }
 
 #highlights_text h1 {
@@ -334,6 +351,7 @@ main {
 ---------// Highlights Section CSS : End //----------
 ===================================================== */
 
+
 /* ==================================================
 ------// Upcoming Matches Section CSS : Start //-----
 ===================================================== */
@@ -357,6 +375,9 @@ main {
   top: -25px;
   left: 450px;
 }
+
+/* >>>>>>>> Upcoming Match Box Design <<<<<<<< */
+
 
 #upcoming_matches .time {
   text-align: center;
@@ -400,6 +421,7 @@ main {
 /* ==================================================
 ------// Upcoming Matches Section CSS : End //-------
 ===================================================== */
+
 
 /* ==================================================
 ----------// Sponsors Section CSS : Start //---------
@@ -454,9 +476,11 @@ main {
 ----------// Sponsors Section CSS : End //-----------
 ===================================================== */
 
+
 /* ==================================================
 ===========// Main Section CSS : End //==============
 ===================================================== */
+
 
 /* ==================================================
 ===========// Footer Section CSS : End //============
@@ -474,6 +498,8 @@ footer {
   width: 100%;
   margin-right: 0px;
 }
+
+/* >>>>>>>> Social Links Design <<<<<<<< */
 
 #social_media_links {
   text-align: center;
@@ -499,6 +525,8 @@ footer {
 #social_media_links i {
   color: var(--social_media_icon);
 }
+
+/* >>>>>>>> Copyright Infos Design <<<<<<<< */
 
 .footer_infos p {
   text-align: center;
